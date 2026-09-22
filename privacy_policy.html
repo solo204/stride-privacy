@@ -24,15 +24,15 @@
 <h1>Privacy Policy</h1>
 <p><strong>App:</strong> Stride – Habit &amp; Wellness Tracker<br>
 <strong>Developer:</strong> J.A. Reyes<br>
-<strong>Effective date:</strong> August 1, 2026<br>
+<strong>Effective date:</strong> September 22, 2026<br>
 <strong>Contact:</strong> <a href="mailto:jrysnt@gmail.com">jrysnt@gmail.com</a></p>
 
 <h2>1. Overview</h2>
 <p>Stride is a personal habit and wellness tracking app. We are committed to protecting your privacy. This policy explains what data the app collects, how it is used, and your rights.</p>
+<p>Stride has two tiers: a <strong>free tier</strong> (data stored locally on your device only) and a <strong>Pro tier</strong> (adds Google Sign-In and optional cloud backup via Firebase). The sections below clarify which applies where.</p>
 
 <h2>2. Data We Collect</h2>
-<p>Stride stores all data <strong>locally on your device only</strong>. We do not collect, transmit, or store any personal information on external servers.</p>
-<p>Data stored locally includes:</p>
+<p><strong>All users (free and Pro)</strong> — the following is stored locally on your device:</p>
 <ul>
   <li>Your first name (used for personalized notifications)</li>
   <li>Health conditions you select (e.g., ADHD, anxiety, chronic pain)</li>
@@ -41,37 +41,51 @@
   <li>Thought log entries (CBT journal)</li>
   <li>Notification preferences and app settings</li>
 </ul>
-<p>This data never leaves your device unless you explicitly export or share it.</p>
+<p><strong>Pro users only</strong> — when you sign in with Google and enable cloud sync, the data listed above is additionally stored in <strong>Firebase Firestore</strong> (Google's cloud database) so it can be backed up and synced across your devices. We also store:</p>
+<ul>
+  <li>Your Google account email address and a Firebase-assigned user ID (UID) — used solely to identify your data in Firestore and to verify your Pro subscription</li>
+</ul>
+<p><strong>Subscription (Pro users)</strong> — purchases are processed by <strong>RevenueCat</strong>, our subscription management provider. RevenueCat receives your Google Play purchase token and subscription status. We do not store or process payment card details directly. RevenueCat's privacy policy is available at <a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a>.</p>
 
 <h2>3. Data We Do NOT Collect</h2>
 <ul>
-  <li>We do not collect your name, email, or any account credentials</li>
-  <li>We do not use analytics or crash reporting services</li>
   <li>We do not use advertising SDKs or show ads</li>
+  <li>We do not use third-party analytics or crash reporting services</li>
   <li>We do not access your contacts, camera, microphone, or location</li>
-  <li>We do not share any data with third parties</li>
+  <li>We do not sell your data to any third party</li>
+  <li>Free-tier users: we do not collect your email address or any account credentials</li>
 </ul>
 
-<h2>4. Permissions</h2>
+<h2>4. Third-Party Services</h2>
+<p>Pro users interact with the following third-party services:</p>
+<ul>
+  <li><strong>Google Firebase / Firestore</strong> – cloud database for backup and multi-device sync. Data is stored on Google's servers and subject to <a href="https://firebase.google.com/support/privacy" target="_blank">Google's privacy policy</a>.</li>
+  <li><strong>Google Sign-In</strong> – used to authenticate Pro accounts. We receive only your email address and a unique user ID from Google.</li>
+  <li><strong>RevenueCat</strong> – subscription management and purchase validation. See <a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a>.</li>
+</ul>
+
+<h2>5. Permissions</h2>
 <p>Stride requests the following Android permissions:</p>
 <ul>
   <li><strong>POST_NOTIFICATIONS</strong> – to send you habit reminders and wellness check-in prompts. You can disable these at any time in your device settings.</li>
   <li><strong>RECEIVE_BOOT_COMPLETED</strong> – to reschedule reminders after your device restarts.</li>
   <li><strong>SCHEDULE_EXACT_ALARM</strong> – to deliver reminders at the times you choose.</li>
   <li><strong>VIBRATE</strong> – for haptic feedback within the app.</li>
+  <li><strong>INTERNET</strong> – required for Pro cloud sync and subscription verification. Not used on the free tier beyond app startup checks.</li>
 </ul>
 <p>No permission grants us access to personal files, health records, or any data outside the app.</p>
 
-<h2>5. Children's Privacy</h2>
+<h2>6. Children's Privacy</h2>
 <p>Stride is not directed to children under 13. We do not knowingly collect information from children. If you believe a child has provided information through the app, please contact us and we will address it promptly.</p>
 
-<h2>6. Data Deletion</h2>
-<p>All app data is stored on your device. You can delete all data at any time by uninstalling the app. Individual entries can be deleted within the app itself.</p>
+<h2>7. Data Deletion</h2>
+<p><strong>Free users:</strong> all data is stored on your device. Uninstalling the app removes it completely.</p>
+<p><strong>Pro users:</strong> your data is also stored in Firebase Firestore. To request deletion of your cloud data, email us at <a href="mailto:jrysnt@gmail.com">jrysnt@gmail.com</a> with the subject "Data Deletion Request" and we will remove your Firestore data within 30 days. You can also delete individual entries within the app, which propagates the deletion to the cloud on the next sync.</p>
 
-<h2>7. Changes to This Policy</h2>
+<h2>8. Changes to This Policy</h2>
 <p>We may update this policy as the app evolves. Any changes will be reflected here with an updated effective date. Continued use of the app after changes constitutes acceptance of the revised policy.</p>
 
-<h2>8. Contact</h2>
+<h2>9. Contact</h2>
 <p>Questions or concerns? Reach us at <a href="mailto:jrysnt@gmail.com">jrysnt@gmail.com</a>.</p>
 
 </body>
